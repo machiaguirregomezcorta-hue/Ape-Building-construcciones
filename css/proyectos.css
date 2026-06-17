@@ -1,0 +1,156 @@
+/* =========================
+   PAGINA PROYECTOS
+========================= */
+
+main{
+    max-width:1400px;
+    margin:auto;
+    padding:20px;
+}
+
+/* TITULOS */
+
+main h2{
+    text-align:center;
+    font-size:3rem;
+    color:var(--azul-marino);
+    margin-bottom:20px;
+}
+
+main p{
+    text-align:center;
+    color:#666;
+}
+
+/* =========================
+   SECCION PROYECTOS
+========================= */
+
+.proyectos{
+    padding:60px 20px;
+}
+
+/* GRID */
+
+.grid-proyectos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+    margin-top:50px;
+}
+
+/* TARJETAS */
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.4s;
+    max-width:420px;
+    margin:auto;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/* IMAGENES */
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.card:hover img{
+    transform:scale(1.05);
+}
+
+/* CONTENIDO */
+
+.card-content{
+    padding:25px;
+}
+
+.card-content h3{
+    color:var(--azul-marino);
+    margin-bottom:10px;
+    text-align:center;
+}
+
+.card-content p{
+    text-align:left;
+    color:#555;
+}
+
+/* =========================
+   PROYECTOS EN DESARROLLO
+========================= */
+
+article{
+    background:white;
+    padding:35px;
+    margin-top:50px;
+    border-left:6px solid var(--azul-marino);
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+article h4{
+    color:var(--azul-marino);
+    margin-bottom:15px;
+    font-size:1.5rem;
+}
+
+article p{
+    text-align:left;
+}
+
+/* =========================
+   LOGROS
+========================= */
+.logros{
+    max-width:800px;
+    margin:40px auto;
+    list-style:none;
+}
+
+.logros li{
+    background:white;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.07);
+    transition:.3s;
+}
+
+.logros li:hover{
+    transform:translateX(10px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    main h2{
+        font-size:2.2rem;
+    }
+
+    .grid-proyectos{
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        max-width:100%;
+    }
+
+    nav ul{
+        gap:15px;
+    }
+}
